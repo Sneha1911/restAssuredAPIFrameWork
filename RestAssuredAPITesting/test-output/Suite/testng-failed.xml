@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testPack.TC11_Put_Employee_Data">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="createEmp"/>
+          <include name="resValidation"/>
+        </methods>
+      </class> <!-- testPack.TC11_Put_Employee_Data -->
+      <class name="testPack.TC12_Delete_Employee_Record">
+        <methods>
+          <include name="resValidation"/>
+          <include name="createEmp"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testPack.TC12_Delete_Employee_Record -->
+      <class name="testPack.TC9_Get_Single_Employee_Data">
+        <methods>
+          <include name="checkResponseBody"/>
+          <include name="checkStatusCode"/>
+          <include name="contentEncoding"/>
+          <include name="setup"/>
+          <include name="checkStatusLIne"/>
+          <include name="tearDown"/>
+          <include name="getAllEmployeeData"/>
+        </methods>
+      </class> <!-- testPack.TC9_Get_Single_Employee_Data -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

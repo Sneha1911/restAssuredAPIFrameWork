@@ -1,0 +1,878 @@
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://dummy.restapiexample.com:80
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to dummy.restapiexample.com:80
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: GET /api/v1/employees HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "GET /api/v1/employees HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: dummy.restapiexample.com[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> GET /api/v1/employees HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Host: dummy.restapiexample.com
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_241)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 200 OK[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Allow-Origin: *[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: max-age=31536000[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Encoding: gzip[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json;charset=utf-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Mon, 20 Apr 2020 11:26:32 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Referrer-Policy: [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Response: 200[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Server: nginx/1.16.0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 11:56:32 UTC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 13:26:32 UTC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Set-Cookie: ezoab_133674=mod84-c; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 13:26:32 UTC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Set-Cookie: active_template::133674=pub_site.1587381992; Path=/; Domain=restapiexample.com; Expires=Wed, 22 Apr 2020 11:26:32 UTC[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Accept-Encoding,User-Agent,X-APP-JSON[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Ezoic-Cdn: Hit ds;mm;64e5dcd8fd074fe044e20470a9643699;2-133674-2;11eea874-25cc-4a8a-4a7a-e7fd9bafe9d8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Middleton-Response: 200[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Sol: pub_site[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Length: 595[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 200 OK
+[main] DEBUG org.apache.http.headers  - << Access-Control-Allow-Origin: *
+[main] DEBUG org.apache.http.headers  - << Access-Control-Expose-Headers: Content-Type, X-Requested-With, X-authentication, X-client
+[main] DEBUG org.apache.http.headers  - << Cache-Control: max-age=31536000
+[main] DEBUG org.apache.http.headers  - << Content-Encoding: gzip
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json;charset=utf-8
+[main] DEBUG org.apache.http.headers  - << Date: Mon, 20 Apr 2020 11:26:32 GMT
+[main] DEBUG org.apache.http.headers  - << Referrer-Policy: 
+[main] DEBUG org.apache.http.headers  - << Response: 200
+[main] DEBUG org.apache.http.headers  - << Server: nginx/1.16.0
+[main] DEBUG org.apache.http.headers  - << Set-Cookie: ezoadgid_133674=-1; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 11:56:32 UTC
+[main] DEBUG org.apache.http.headers  - << Set-Cookie: ezoref_133674=; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 13:26:32 UTC
+[main] DEBUG org.apache.http.headers  - << Set-Cookie: ezoab_133674=mod84-c; Path=/; Domain=restapiexample.com; Expires=Mon, 20 Apr 2020 13:26:32 UTC
+[main] DEBUG org.apache.http.headers  - << Set-Cookie: active_template::133674=pub_site.1587381992; Path=/; Domain=restapiexample.com; Expires=Wed, 22 Apr 2020 11:26:32 UTC
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding
+[main] DEBUG org.apache.http.headers  - << Vary: Accept-Encoding,User-Agent,X-APP-JSON
+[main] DEBUG org.apache.http.headers  - << X-Ezoic-Cdn: Hit ds;mm;64e5dcd8fd074fe044e20470a9643699;2-133674-2;11eea874-25cc-4a8a-4a7a-e7fd9bafe9d8
+[main] DEBUG org.apache.http.headers  - << X-Middleton-Response: 200
+[main] DEBUG org.apache.http.headers  - << X-Sol: pub_site
+[main] DEBUG org.apache.http.headers  - << Content-Length: 595
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive indefinitely
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json;charset=utf-8
+[main] DEBUG org.apache.http.wire  -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xff][0x9c][0x95][0xcd]n[0xdb]:[0x14][0x84]_[0x85][0xe0]:[0xb][0x89][0xd4][0x8f][0xed][0xdd][0xb5][0x83]8[0xb8]i[0x8a]6[0x9][0x1a][0x14]E[0x11][0x1c]X[0xa7]1Q[0x9a]4[0x8e][0xa8]4j[0x90]w/[0x8c]v[0x91][0xc5][0x88]B[0xbb][0xb5]`}[0x18]r[0xe6][0xd3][0x8b][0xee][0x13][0xa5][0xa1][0xd7]+[0xdd][0xf][0xbb][0x1d][0xf7][0xbd]>[0xd3][0x1d]%[0xd2][0xab]//[0xda]uz[0xa5]K}[0xa6][0xf9]p[0xf4]qd~[0x8]t`[0xbd][0xd2]w[0xee][0x91]E[0xbd]w[0xcf]1[0xbc]}[0xda][0x93]'[0x19][0xf5]J[S,[0x8a][0xe2][0xed]#z<[0xfd][0xaf]9[0xbd][0xec]([0xf1][0x9b][0xf3][0xfc][0xe0][0xe][0xbf][0xd4][0xaf]gP[0x6][0xa0][0xb6]$[0xc2])[0xa9]{[0x17][0x12]K[0xf]qe[[0xb4]5[0xc2][0xd9],[0xce][0x2][0xdc][0xfd]>[0xc5][0xa0]6[0xf1][0x19][0x92][0x16]M[0x1]s5YP[0x5]@[0x1b][0xee][0xc4][0xed][0xd4][0x15]{?BTem[0xd1][0x0][0x96]1YV[0x8d]B9q[0xea][0x96]R[0x1c][0xf0][0xf1]5[0xa6]E[0xa9]l[0xfe][0xf8][0x1a]@Z[0x8b]c[0xef]Y[0xdd];[0xef][0x1d][0x1d][0xfa][0xa9]~[0xb4][0x6][0x9f]c[0xbe][0x1f]- ^[0xb2]H[0xec][0xd4]fO[0xa1][0xf3],8[0xa0]mk[0x84][0xab][0x97]Y[0xdc][0x2][0xe0]n[0xf6]1[0x90]:[0xa7]'[0xd7]M[0x86]3[0xed][0x12][0xd2][0xea],m[0x89]J[0x12][0xbd]g[0xe][0xea]r[0x90]>A[0x98])j[0x18][0xcd][0xe6][0xa3][0x95][0x5][0xa0][0xdd][0xc6]0[0x92][0xba][0x90]8[0xc1]*[0xb][0xdb] [0x96][0xc9][0xf7][0xa4]D[0x6][0xf9][0x9f][0x3][0xa9]-[0xb9][0xc0]x[0xd2][0xcb][0xa2]F[0xe5][0xb7]E[0x1e][0x85][0xc][0xf2]qp![0xa8][0xb]?[0x86][0x89][0xfb][0xaa]p[0x19]g[0x86]V"}l[0xf6]$[0x1d][0xab]k[0x92]~O[0xde][0xe3]a[0xb7][0x5]<F[0x9b][0x97]H[0x89],rI[0x9e]Gu[0xc5]!p[0x87]5bK[0xb][0xb]R[0xcd]\[0x1a][0xf2][0xc8][0x1d][0xa5][0x91][0x2][0xa9][0xb][0x97]~[0x1e])[0x89][0xdb]}[0xc7][0xcc]E[\r]}\[0xce][0x94][0x12][0x19][0xe5][0xda][0xed][0xf6][0xc4]^[0xdd]:[0xff]D[0xb8][0x96][0xcb][0x5]L8#[0xe5][0x12][0xd9][0xe4][0x3][\r]^[0xad]G[0xe9] [0xa9]55[0xd6]V[0x95]'![0x91]l}[0x14]G[0xea][0x9d]K[0xc9]3[0x9e][0xf6][0xbf]Y[0xab]D"Y[0xb]u[0xa7][0xa6]l[0x85]'[0x1d][0x89]WP[0xcd]|[0xb2][0x91]H[0xce][0xc9][0xa9][0x1b][0x17][0xf1][0xb2]M[0x89]c[0xd9][0xbc][0x1e][0xcd][0x84]E8%V[0x1b][0xf2][0xdd][0xf][0x9e][0xd8][0x9b][0xad][0xf0][0xad][0xcd][0xb8][0xc4] [0x97]|[0x1e][0xc4][0xa9]5[0x8b][0xe0][0xb1]5-FU3([0xa8][0x12][0xe2][0x9e]D}[0xa2][0xb0][0xc3][0xfd]([0x8b][0xa6]B+337[0x86]<r[0x1e][0xc5][0xf5][0xa7][0xaf]v7Q[0x8f]E[0xfd]7[0xea][0xff][0xfa][0xfa]+[0x0][0x0][0xff][0xff]8n[0xc9]gY[\n]"
+[main] DEBUG org.apache.http.wire  -  << "[0x0][0x0]"
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@452e26d0
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive indefinitely
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 979
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 433
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 792
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 571
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 399
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1947
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1447
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1549
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1203
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1176
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 4142
+[main] WARN  EmployeeRestAPI  - Response time is longer than 2000
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1510
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1166
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehavN","salary":"70097","age":"21","id":68}}
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaWH","salary":"88688","age":"15","id":97}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC12_Delete_Employee_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"failed","message":"Error! Not able to delete record"}
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 570
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1624
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1473
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1157
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaZb","salary":"52096","age":"39","id":26}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC12_Delete_Employee_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"failed","message":"Error! Not able to delete record"}
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 2039
+[main] WARN  EmployeeRestAPI  - Response time is longer than 2000
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1155
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"Snehaxd","salary":"33374","age":"77","id":32}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC12_Delete_Employee_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"failed","message":"Error! Not able to delete record"}
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1192
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 912
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaUp","salary":"68211","age":"36","id":60}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC12_Delete_Employee_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"failed","message":"Error! Not able to delete record"}
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 2275
+[main] WARN  EmployeeRestAPI  - Response time is longer than 2000
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - ************** Started  TC9_Get_Single_Employee_Data ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 75
+[main] WARN  EmployeeRestAPI  - Content is less than 1500
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"failed","message":"Oops! someting issue found to fetch record."}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 836
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 400
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 400 Bad Request
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : null
+[main] INFO  EmployeeRestAPI  - ************** END OF TC9_Get_Single_Employee_Data **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehamB","salary":"06415","age":"83","id":61}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC12_Delete_Employee_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"failed","message":"Error! Not able to delete record"}
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 3261
+[main] WARN  EmployeeRestAPI  - Response time is longer than 2000
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaYe","salary":"79833","age":"29","id":46}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1113
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaRP","salary":"33137","age":"32","id":51}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1327
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaEG","salary":"88584","age":"48","id":31}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1244
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaWE","salary":"68990","age":"43","id":100}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1492
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaZM","salary":"34488","age":"79","id":47}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1494
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehatE","salary":"38646","age":"41","id":49}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1467
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaBr","salary":"42569","age":"10","id":45}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1440
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaDf","salary":"43174","age":"11","id":79}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************
+[main] INFO  EmployeeRestAPI  - ************** Started  TC8_Get_All_Employees ****************
+[main] INFO  EmployeeRestAPI  - *************** Checking Content Length ************
+[main] INFO  EmployeeRestAPI  - Content Length is : 595
+[main] INFO  EmployeeRestAPI  - ************** Checking Content Type **************
+[main] INFO  EmployeeRestAPI  - Content type is : application/json;charset=utf-8
+[main] INFO  EmployeeRestAPI  - ***************** Checking Cookies *************
+[main] INFO  EmployeeRestAPI  - ***************** Checking Response Body *****************
+[main] INFO  EmployeeRestAPI  - Response Body =====> {"status":"success","data":[{"id":"1","employee_name":"Tiger Nixon","employee_salary":"320800","employee_age":"61","profile_image":""},{"id":"2","employee_name":"Garrett Winters","employee_salary":"170750","employee_age":"63","profile_image":""},{"id":"3","employee_name":"Ashton Cox","employee_salary":"86000","employee_age":"66","profile_image":""},{"id":"4","employee_name":"Cedric Kelly","employee_salary":"433060","employee_age":"22","profile_image":""},{"id":"5","employee_name":"Airi Satou","employee_salary":"162700","employee_age":"33","profile_image":""},{"id":"6","employee_name":"Brielle Williamson","employee_salary":"372000","employee_age":"61","profile_image":""},{"id":"7","employee_name":"Herrod Chandler","employee_salary":"137500","employee_age":"59","profile_image":""},{"id":"8","employee_name":"Rhona Davidson","employee_salary":"327900","employee_age":"55","profile_image":""},{"id":"9","employee_name":"Colleen Hurst","employee_salary":"205500","employee_age":"39","profile_image":""},{"id":"10","employee_name":"Sonya Frost","employee_salary":"103600","employee_age":"23","profile_image":""},{"id":"11","employee_name":"Jena Gaines","employee_salary":"90560","employee_age":"30","profile_image":""},{"id":"12","employee_name":"Quinn Flynn","employee_salary":"342000","employee_age":"22","profile_image":""},{"id":"13","employee_name":"Charde Marshall","employee_salary":"470600","employee_age":"36","profile_image":""},{"id":"14","employee_name":"Haley Kennedy","employee_salary":"313500","employee_age":"43","profile_image":""},{"id":"15","employee_name":"Tatyana Fitzpatrick","employee_salary":"385750","employee_age":"19","profile_image":""},{"id":"16","employee_name":"Michael Silva","employee_salary":"198500","employee_age":"66","profile_image":""},{"id":"17","employee_name":"Paul Byrd","employee_salary":"725000","employee_age":"64","profile_image":""},{"id":"18","employee_name":"Gloria Little","employee_salary":"237500","employee_age":"59","profile_image":""},{"id":"19","employee_name":"Bradley Greer","employee_salary":"132000","employee_age":"41","profile_image":""},{"id":"20","employee_name":"Dai Rios","employee_salary":"217500","employee_age":"35","profile_image":""},{"id":"21","employee_name":"Jenette Caldwell","employee_salary":"345000","employee_age":"30","profile_image":""},{"id":"22","employee_name":"Yuri Berry","employee_salary":"675000","employee_age":"40","profile_image":""},{"id":"23","employee_name":"Caesar Vance","employee_salary":"106450","employee_age":"21","profile_image":""},{"id":"24","employee_name":"Doris Wilder","employee_salary":"85600","employee_age":"23","profile_image":""}]}
+[main] INFO  EmployeeRestAPI  - *********** Checking response time *************
+[main] INFO  EmployeeRestAPI  - Response time is : 1461
+[main] INFO  EmployeeRestAPI  - ************** Checking Server type **************
+[main] INFO  EmployeeRestAPI  - Server type is : nginx/1.16.0
+[main] INFO  EmployeeRestAPI  - **************** Checking Status Code ****************
+[main] INFO  EmployeeRestAPI  - Status Code is : 200
+[main] INFO  EmployeeRestAPI  - ********* Checking Status Line of the response **********
+[main] INFO  EmployeeRestAPI  - Status line of the response is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - *************** Checking Content encoding ************
+[main] INFO  EmployeeRestAPI  - Content Encoding is : gzip
+[main] INFO  EmployeeRestAPI  - ************** END OF TC8_Get_All_Employees **************** 
+[main] INFO  EmployeeRestAPI  - *********** Start of TC10_Post_Create_Emp_Record ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":{"name":"SnehaiH","salary":"46354","age":"96","id":36}}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC10_Post_Create_Emp_Record ************
+[main] INFO  EmployeeRestAPI  - *********** Start of TC11_Put_Employee_Data ***************
+[main] INFO  EmployeeRestAPI  -  ************ Response Validation **********
+[main] INFO  EmployeeRestAPI  - Response Body is : {"status":"success","data":null}
+[main] INFO  EmployeeRestAPI  - Status code is : 200
+[main] INFO  EmployeeRestAPI  - Status Line is : HTTP/1.1 200 OK
+[main] INFO  EmployeeRestAPI  - ********** End of TC11_Put_Employee_Data ************

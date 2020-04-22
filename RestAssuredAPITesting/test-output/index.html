@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\eclipsews\RestAssuredAPITesting\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">24 methods, 6 failed,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkStatusLIne">checkStatusLIne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="contentEncoding">contentEncoding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC12_Delete_Employee_Record" hash-for-method="resValidation">resValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC11_Put_Employee_Data" hash-for-method="resValidation">resValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkContentLength">checkContentLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkContentLength">checkContentLength</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkContentType">checkContentType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkContentType">checkContentType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkCookies">checkCookies</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkResponseBody">checkResponseBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkResponseTime">checkResponseTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkResponseTime">checkResponseTime</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC9_Get_Single_Employee_Data" hash-for-method="checkServerType">checkServerType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkServerType">checkServerType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkStatusCode">checkStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="checkStatusLIne">checkStatusLIne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC8_Get_All_Employees" hash-for-method="contentEncoding">contentEncoding</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC10_Post_Create_Emp_Record" hash-for-method="resValidation">resValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC10_Post_Create_Emp_Record" hash-for-method="statusCodeValidation">statusCodeValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC11_Put_Employee_Data" hash-for-method="statusCodeValidation">statusCodeValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC11_Put_Employee_Data" hash-for-method="statusLineValidation">statusLineValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testPack.TC10_Post_Create_Emp_Record" hash-for-method="statusLineValidation">statusLineValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPack.TC11_Put_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="resValidation">
+                  </a> <!-- resValidation -->
+                  <span class="method-name">resValidation</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at testPack.TC11_Put_Employee_Data.resValidation(TC11_Put_Employee_Data.java:45)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPack.TC12_Delete_Employee_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="resValidation">
+                  </a> <!-- resValidation -->
+                  <span class="method-name">resValidation</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at junit.framework.Assert.assertEquals(Assert.java:147)
+	at junit.framework.Assert.assertEquals(Assert.java:153)
+	at testPack.TC12_Delete_Employee_Record.resValidation(TC12_Delete_Employee_Record.java:36)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPack.TC9_Get_Single_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;false&gt; but was:&lt;true&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at testPack.TC9_Get_Single_Employee_Data.checkResponseBody(TC9_Get_Single_Employee_Data.java:30)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;400&gt; but was:&lt;200&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:472)
+	at org.junit.Assert.assertEquals(Assert.java:456)
+	at testPack.TC9_Get_Single_Employee_Data.checkStatusCode(TC9_Get_Single_Employee_Data.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLIne">
+                  </a> <!-- checkStatusLIne -->
+                  <span class="method-name">checkStatusLIne</span>
+                  <div class="stack-trace">org.junit.ComparisonFailure: expected:&lt;HTTP/1.1 [400 Bad Request]&gt; but was:&lt;HTTP/1.1 [200 OK]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:125)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at testPack.TC9_Get_Single_Employee_Data.checkStatusLIne(TC9_Get_Single_Employee_Data.java:60)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentEncoding">
+                  </a> <!-- contentEncoding -->
+                  <span class="method-name">contentEncoding</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected:&lt;null&gt; but was:&lt;gzip&gt;
+	at org.junit.Assert.fail(Assert.java:93)
+	at org.junit.Assert.failNotEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:128)
+	at org.junit.Assert.assertEquals(Assert.java:147)
+	at testPack.TC9_Get_Single_Employee_Data.contentEncoding(TC9_Get_Single_Employee_Data.java:87)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPack.TC11_Put_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="statusCodeValidation">
+                  </a> <!-- statusCodeValidation -->
+                  <span class="method-name">statusCodeValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="statusLineValidation">
+                  </a> <!-- statusLineValidation -->
+                  <span class="method-name">statusLineValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPack.TC8_Get_All_Employees</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContentLength">
+                  </a> <!-- checkContentLength -->
+                  <span class="method-name">checkContentLength</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContentType">
+                  </a> <!-- checkContentType -->
+                  <span class="method-name">checkContentType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkCookies">
+                  </a> <!-- checkCookies -->
+                  <span class="method-name">checkCookies</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseBody">
+                  </a> <!-- checkResponseBody -->
+                  <span class="method-name">checkResponseBody</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseTime">
+                  </a> <!-- checkResponseTime -->
+                  <span class="method-name">checkResponseTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServerType">
+                  </a> <!-- checkServerType -->
+                  <span class="method-name">checkServerType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusCode">
+                  </a> <!-- checkStatusCode -->
+                  <span class="method-name">checkStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkStatusLIne">
+                  </a> <!-- checkStatusLIne -->
+                  <span class="method-name">checkStatusLIne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentEncoding">
+                  </a> <!-- contentEncoding -->
+                  <span class="method-name">contentEncoding</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPack.TC9_Get_Single_Employee_Data</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContentLength">
+                  </a> <!-- checkContentLength -->
+                  <span class="method-name">checkContentLength</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkContentType">
+                  </a> <!-- checkContentType -->
+                  <span class="method-name">checkContentType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkResponseTime">
+                  </a> <!-- checkResponseTime -->
+                  <span class="method-name">checkResponseTime</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkServerType">
+                  </a> <!-- checkServerType -->
+                  <span class="method-name">checkServerType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testPack.TC10_Post_Create_Emp_Record</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="resValidation">
+                  </a> <!-- resValidation -->
+                  <span class="method-name">resValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="statusCodeValidation">
+                  </a> <!-- statusCodeValidation -->
+                  <span class="method-name">statusCodeValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="statusLineValidation">
+                  </a> <!-- statusLineValidation -->
+                  <span class="method-name">statusLineValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\eclipsews\RestAssuredAPITesting\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testPack.TC8_Get_All_Employees&quot;/&gt;
+      &lt;class name=&quot;testPack.TC9_Get_Single_Employee_Data&quot;/&gt;
+      &lt;class name=&quot;testPack.TC10_Post_Create_Emp_Record&quot;/&gt;
+      &lt;class name=&quot;testPack.TC11_Put_Employee_Data&quot;/&gt;
+      &lt;class name=&quot;testPack.TC12_Delete_Employee_Record&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(24);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkResponseBody')
+data.setCell(0, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(0, 3, 51);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkContentLength')
+data.setCell(1, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(1, 3, 14);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'resValidation')
+data.setCell(2, 2, 'testPack.TC10_Post_Create_Emp_Record')
+data.setCell(2, 3, 7);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'checkCookies')
+data.setCell(3, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(3, 3, 4);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkServerType')
+data.setCell(4, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(4, 3, 4);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkStatusCode')
+data.setCell(5, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'contentEncoding')
+data.setCell(6, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkResponseTime')
+data.setCell(7, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(7, 3, 3);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkContentLength')
+data.setCell(8, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(8, 3, 3);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'contentEncoding')
+data.setCell(9, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(9, 3, 3);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkContentType')
+data.setCell(10, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkServerType')
+data.setCell(11, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(11, 3, 3);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkResponseBody')
+data.setCell(12, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(12, 3, 3);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'resValidation')
+data.setCell(13, 2, 'testPack.TC12_Delete_Employee_Record')
+data.setCell(13, 3, 3);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkStatusLIne')
+data.setCell(14, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(14, 3, 3);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'resValidation')
+data.setCell(15, 2, 'testPack.TC11_Put_Employee_Data')
+data.setCell(15, 3, 3);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'statusCodeValidation')
+data.setCell(16, 2, 'testPack.TC10_Post_Create_Emp_Record')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'checkResponseTime')
+data.setCell(17, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(17, 3, 2);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'checkStatusCode')
+data.setCell(18, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(18, 3, 2);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkStatusLIne')
+data.setCell(19, 2, 'testPack.TC8_Get_All_Employees')
+data.setCell(19, 3, 2);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'statusLineValidation')
+data.setCell(20, 2, 'testPack.TC11_Put_Employee_Data')
+data.setCell(20, 3, 1);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'statusCodeValidation')
+data.setCell(21, 2, 'testPack.TC11_Put_Employee_Data')
+data.setCell(21, 3, 1);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'statusLineValidation')
+data.setCell(22, 2, 'testPack.TC10_Post_Create_Emp_Record')
+data.setCell(22, 3, 1);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'checkContentType')
+data.setCell(23, 2, 'testPack.TC9_Get_Single_Employee_Data')
+data.setCell(23, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 127 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TC8_Get_All_Employees</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getAllEmployees</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContentLength</span>
+                <span class="method-start">3207 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkContentType</span>
+                <span class="method-start">3227 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkCookies</span>
+                <span class="method-start">3232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">3239 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseTime</span>
+                <span class="method-start">3293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServerType</span>
+                <span class="method-start">3298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">3303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkStatusLIne</span>
+                <span class="method-start">3307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contentEncoding</span>
+                <span class="method-start">3311 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3316 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TC9_Get_Single_Employee_Data</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">3322 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">getAllEmployeeData</span>
+                <span class="method-start">3325 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkContentLength</span>
+                <span class="method-start">5244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkContentType</span>
+                <span class="method-start">5249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkResponseBody</span>
+                <span class="method-start">5253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkResponseTime</span>
+                <span class="method-start">5262 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkServerType</span>
+                <span class="method-start">5267 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkStatusCode</span>
+                <span class="method-start">5273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkStatusLIne</span>
+                <span class="method-start">5285 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">contentEncoding</span>
+                <span class="method-start">5295 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5302 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TC10_Post_Create_Emp_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5304 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">createEmp</span>
+                <span class="method-start">5307 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">resValidation</span>
+                <span class="method-start">11384 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">statusCodeValidation</span>
+                <span class="method-start">11393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">statusLineValidation</span>
+                <span class="method-start">11397 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">11399 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TC11_Put_Employee_Data</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11399 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">createEmp</span>
+                <span class="method-start">11401 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">resValidation</span>
+                <span class="method-start">15326 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">statusCodeValidation</span>
+                <span class="method-start">15332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">statusLineValidation</span>
+                <span class="method-start">15335 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">15338 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testPack.TC12_Delete_Employee_Record</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15339 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">createEmp</span>
+                <span class="method-start">15342 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">resValidation</span>
+                <span class="method-start">19726 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
